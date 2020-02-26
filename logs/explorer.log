@@ -1,0 +1,92 @@
+{"level":"INFO","timestamp":1582755235494,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582755235495,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582755235495,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582755235496,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582755235496,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582755235520,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582755235539,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582755235545,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582755235545,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582755235549,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582755236360,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000444},\"BTC\":{\"EUR\":\"8086.77\",\"USD\":\"8805.0\"}}"}
+{"level":"INFO","timestamp":1582755245457,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582755245458,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582755245458,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582755245459,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582755245459,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582755245480,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582755245499,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582755245505,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582755245505,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582755245509,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582755246261,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000444},\"BTC\":{\"EUR\":\"8088.67\",\"USD\":\"8815.0\"}}"}
+{"level":"INFO","timestamp":1582755642332,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582756693956,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582756693957,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582756693957,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582756693958,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582756693958,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582756693984,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582756694006,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582756694012,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582756694012,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582756694016,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582756695160,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.0000045},\"BTC\":{\"USD\":\"8829.6\",\"EUR\":\"8120.34\"}}"}
+{"level":"INFO","timestamp":1582756726403,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582756726403,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582756726404,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582756726404,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582756726404,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582756726426,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582756726445,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582756726451,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582756726451,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582756726456,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582756727291,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.0000045},\"BTC\":{\"USD\":\"8828.9\",\"EUR\":\"8104.70\"}}"}
+{"level":"INFO","timestamp":1582756789098,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759058770,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759058771,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582759058771,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582759058772,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582759058772,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582759058796,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582759058851,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582759058857,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582759058857,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582759058861,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582759059730,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000457},\"BTC\":{\"EUR\":\"8091.98\",\"USD\":\"8819.0\"}}"}
+{"level":"INFO","timestamp":1582759181542,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759181543,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582759181543,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582759181543,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582759181544,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582759181566,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582759181586,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582759181591,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582759181592,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582759181595,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582759182457,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000457},\"BTC\":{\"EUR\":\"8092.14\",\"USD\":\"8817.573978\"}}"}
+{"level":"INFO","timestamp":1582759314867,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759314868,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582759314868,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582759314868,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582759314869,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582759314890,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582759314909,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582759314915,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582759314915,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582759314919,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582759315812,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000457},\"BTC\":{\"EUR\":\"8076.47\",\"USD\":\"8814.4\"}}"}
+{"level":"INFO","timestamp":1582759801406,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759801408,"message":"Exchange: Configured [bitfinex] as BTC/USD exchange"}
+{"level":"INFO","timestamp":1582759801408,"message":"Exchange: Configured [bitstamp] as BTC/EUR exchange"}
+{"level":"INFO","timestamp":1582759801408,"message":"KnownAddresses: Loading known addresses..."}
+{"level":"INFO","timestamp":1582759801408,"message":"KnownAddresses: 2"}
+{"level":"INFO","timestamp":1582759801429,"message":"Loading routes..."}
+{"level":"INFO","timestamp":1582759801450,"message":"Routes loaded"}
+{"level":"ERROR","timestamp":1582759801455,"message":"Cannot receive exchange rates for BTC/RUB pair from [undefined], ignored"}
+{"level":"ERROR","timestamp":1582759801455,"message":"Cannot receive exchange rates for BTC/PLN pair from [undefined], ignored"}
+{"level":"INFO","timestamp":1582759801459,"message":"Shift Explorer started at 0.0.0.0:6040"}
+{"level":"ERROR","timestamp":1582759802313,"message":"Exchange rates: {\"SHIFT\":{\"BTC\":0.00000444},\"BTC\":{\"USD\":\"8837.1\",\"EUR\":\"8109.42\"}}"}
+{"level":"INFO","timestamp":1582759834427,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
+{"level":"INFO","timestamp":1582759877801,"message":"Exchange: Configured [livecoin] as SHIFT/BTC exchange"}
