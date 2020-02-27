@@ -10,8 +10,8 @@ config.port = 6040; // Port to listen on
 /**
  * SHIFT node
  */
-config.shift.host = 'corenode1.shiftnrg.org';
-config.shift.port = 9305;
+config.shift.host = 'node.shiftnrg.io';
+config.shift.port = 80;
 
 /**
  * FreeGeoIP server
