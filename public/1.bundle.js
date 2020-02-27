@@ -1,15 +1,2 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[1],{
-
-/***/ "./src/assets/img/exchanges/poloniex.png":
-/*!***********************************************!*\
-  !*** ./src/assets/img/exchanges/poloniex.png ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"1c6dc1e882837bcf3175cf0bfb0e03ad.png\");\n\n//# sourceURL=webpack:///./src/assets/img/exchanges/poloniex.png?");
-
-/***/ })
-
-}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{462:function(c,n,p){"use strict";p.r(n),n.default=p.p+"70f4494236cc6cd62325fc98c97f9e88.png"}}]);
+//# sourceMappingURL=1.map

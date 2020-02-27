@@ -1,5 +1,4 @@
 
-
 const config = require('./config.global');
 
 /**
@@ -23,7 +22,7 @@ config.freegeoip.port = 8080;
 /**
  * Redis server
  */
-config.redis.host = '172.25.131.225';
+config.redis.host = '0.0.0.0';
 config.redis.port = 6379;
 config.redis.db = 0;
 config.redis.password = '';

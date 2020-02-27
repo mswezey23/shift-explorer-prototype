@@ -3,11 +3,11 @@ import template from './activity-graph.html';
 import './activity-graph.css';
 
 const ActivityGraphConstructor = function (activityGraph) {
-	activityGraph.call(this, this);
+  activityGraph.call(this, this);
 };
 
 AppActivityGraph.component('activityGraph', {
-	template,
-	controller: ActivityGraphConstructor,
-	controllerAs: 'vm',
+  template,
+  controller: ActivityGraphConstructor,
+  controllerAs: 'vm',
 });

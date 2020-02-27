@@ -3,11 +3,11 @@ import template from './market-watcher.html';
 import './market-watcher.css';
 
 const MarketWatcherConstructor = function (marketWatcher) {
-	marketWatcher(this);
+  marketWatcher(this);
 };
 
 AppMarketWatcher.component('marketWatcher', {
-	template,
-	controller: MarketWatcherConstructor,
-	controllerAs: 'vm',
+  template,
+  controller: MarketWatcherConstructor,
+  controllerAs: 'vm',
 });

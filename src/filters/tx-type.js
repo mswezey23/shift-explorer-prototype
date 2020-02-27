@@ -1,3 +1,3 @@
 import AppFilters from './filters.module';
 
-AppFilters.filter('txType', txTypes => tx => txTypes[parseInt(tx.type, 10)]);
+AppFilters.filter('txType', (txTypes) => (tx) => txTypes[parseInt(tx.type, 10)]);

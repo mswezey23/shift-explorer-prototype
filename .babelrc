@@ -9,5 +9,8 @@
         }
       ]
     ],
-    "plugins": ["angularjs-annotate"]
+    "plugins": [
+      "angularjs-annotate",
+      "syntax-dynamic-import"
+    ]
   }

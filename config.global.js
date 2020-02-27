@@ -5,10 +5,10 @@ config.redis = {};
 config.proposals = {};
 config.log = {};
 config.exchangeRates = {
-	exchanges: {
-		SHIFT: {},
-		BTC: {},
-	},
+  exchanges: {
+    SHIFT: {},
+    BTC: {},
+  },
 };
 config.marketWatcher = { exchanges: {}, candles: { poloniex: {} }, orders: {} };
 

@@ -9,39 +9,38 @@ const handler = require('./handler');
 const config = require('../config');
 
 const routes = [].concat(transactions, accounts, blocks, common,
-	delegates, exchanges, statistics);
+  delegates, exchanges, statistics);
 
 const modules = {};
 const services = {};
 
 module.exports = (app) => {
-	routes.forEach((route) => {
-		const name = route.service === '' ? 'common' : route.service;
-		if (!modules[name]) {
-			// eslint-disable-next-line import/no-dynamic-require
-			modules[name] = require(`../lib/api/${route.service}`);
-		}
+  routes.forEach((route) => {
+    const name = route.service === '' ? 'common' : route.service;
+    if (!modules[name]) {
+      // eslint-disable-next-line import/no-dynamic-require
+      modules[name] = require(`../lib/api/${route.service}`);
+    }
 
-		if (!services[name]) {
-			services[name] = (name === 'common') ?
-				new modules[name].common(app, modules[name]) :
-				new modules[name](app);
-		}
-		app.get(`/api/${route.path}`, (req, res, next) =>
-			handler(services[name], route.path.split('/').slice(-1).pop(), route.params(req), req, res, next));
-	});
+    if (!services[name]) {
+      services[name] = (name === 'common')
+        ? new modules[name].common(app, modules[name])
+        : new modules[name](app);
+    }
+    app.get(`/api/${route.path}`, (req, res, next) => handler(services[name], route.path.split('/').slice(-1).pop(), route.params(req), req, res, next));
+  });
 
-	app.get('/api/exchanges', (req, res) => {
-		const result = {
-			success: true,
-			enabled: config.marketWatcher.enabled,
-			exchanges: config.marketWatcher.enabled ? config.marketWatcher.exchanges : [],
-		};
-		return res.json(result);
-	});
+  app.get('/api/exchanges', (req, res) => {
+    const result = {
+      success: true,
+      enabled: config.marketWatcher.enabled,
+      exchanges: config.marketWatcher.enabled ? config.marketWatcher.exchanges : [],
+    };
+    return res.json(result);
+  });
 
-	app.get('/api/version', (req, res) => {
-		const data = services.common.version();
-		return res.json(data);
-	});
+  app.get('/api/version', (req, res) => {
+    const data = services.common.version();
+    return res.json(data);
+  });
 };
