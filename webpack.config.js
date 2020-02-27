@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, PATHS.dev),
-    sourceMapFilename: '[name].map',
+    sourceMapFilename: '[name].js.map',
   },
   devServer: {
     contentBase: PATHS.dev,
@@ -32,11 +32,12 @@ module.exports = {
     },
   },
   resolve: {
-    alias: {
-      sigma: path.resolve(__dirname, 'node_modules/sigma/build/sigma.require.js'),
-    },
+    modules: [
+      // sigma: path.resolve(__dirname, 'node_modules/sigma/build/sigma.require.js'),
+      'node_modules',
+    ],
   },
-  devtool: 'source-map',
+  devtool: 'cheap-source-map',
   node: {
     global: false,
   },
@@ -106,10 +107,8 @@ module.exports = {
         loader: 'file-loader?name=[name].[ext]',
       },
       {
-        test: /\/sigma.*\.js?$/,
-        use: [{
-          loader: 'imports-loader?sigma',
-        }],
+        test: /sigma.*/,
+        loader: 'imports-loader?this=>window',
       },
     ],
   },

@@ -1,7 +1,7 @@
 import AppFilters from './filters.module';
 
 AppFilters.filter('approval', () => (votes) => {
-  if (Number.isNan(votes)) {
+  if (Number.isNaN(votes)) {
     return 0;
   }
   // (votes / 1e16) * 100
