@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
-// const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 /**
@@ -13,7 +12,7 @@ const PATHS = {
   dev: path.resolve(__dirname, 'public'),
   build: path.join(__dirname, 'dist'),
   test: path.join(__dirname, 'test'),
-  vendors: /node_modules|bower_components/,
+  vendors: /node_modules/,
 };
 
 module.exports = {
@@ -46,7 +45,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin([
       { from: './src/assets/img', to: 'img' },
-      // { from: './src/assets/img/leaflet', to: './public' },
     ]),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
@@ -56,12 +54,6 @@ module.exports = {
     new webpack.DefinePlugin({
       global: 'window',
     }),
-    // new TerserPlugin({
-    //   parallel: true,
-    //   terserOptions: {
-    //     ecma: 6,
-    //   },
-    // }),
   ],
   module: {
     rules: [
@@ -100,18 +92,6 @@ module.exports = {
           },
         }],
       },
-      //   {
-      //     test: /\.svg$/,
-      //     loader: 'svg-inline-loader',
-      //   },
-      //   {
-      //     test: /\.(png|jpe?g|gif)$/i,
-      //     use: [
-      //       {
-      //         loader: 'file-loader',
-      //       },
-      //     ],
-      //   },
       {
         test: /\.(swf)$/,
         loader: 'file-loader?name=[name].[ext]',

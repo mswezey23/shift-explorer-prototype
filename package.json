@@ -1,7 +1,7 @@
 {
   "name": "shift-explorer-prototype",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.5.0",
+  "description": "prototyped versioni of the Shift Explorer",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -11,8 +11,7 @@
     "start": "webpack --watch & webpack-dev-server --open-page 'webpack-dev-server'",
     "build:dev": "webpack --env=dev --progress --color",
     "build:prd": "webpack --env=prd --progress --color",
-    "eslint": "eslint ./benchmarks ./utils ./lib ./api ./src ./test ./features ./tasks ./*.js ./*.json",
-    "copy-files": "cp -r ./src/assets/img/favicon.ico ./src/assets/img/leaflet ./public"
+    "eslint": "eslint ./benchmarks ./utils ./lib ./api ./src ./test ./features ./tasks ./*.js ./*.json"
   },
   "dependencies": {
     "amstock3": "^3.21.15",
