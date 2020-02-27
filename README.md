@@ -32,11 +32,11 @@ These programs and resources are required to install and run Shift Explorer
 // TODO: remove grunt?
 - Grunt.js (<http://gruntjs.com/>) -- Grunt is used to run eslint and unit tests.
 
-  `sudo npm install -g grunt`
+  `npm install -g grunt`
 
 - PM2 (https://github.com/Unitech/pm2) -- PM2 manages the node process for Shift Explorer and handles log rotation (Highly Recommended)
 
-  `sudo npm install -g pm2`
+  `npm install -g pm2`
   
 - PM2-logrotate (https://github.com/pm2-hive/pm2-logrotate) -- Manages PM2 logs
 
@@ -47,7 +47,7 @@ These programs and resources are required to install and run Shift Explorer
 
 - Git (<https://github.com/git/git>) -- Used for cloning and updating Shift Explorer
 
-  `sudo apt-get install -y git`
+  `apt-get install -y git`
 
 - Tool chain components -- Used for compiling dependencies
 
