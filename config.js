@@ -10,7 +10,7 @@ config.port = 6040; // Port to listen on
 /**
  * SHIFT node
  */
-config.shift.host = 'node.shiftnrg.io';
+config.shift.host = 'corenodes.shiftnrg.io';
 config.shift.port = 80;
 
 /**
