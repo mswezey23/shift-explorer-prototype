@@ -63,11 +63,11 @@ config.exchangeRates.exchanges.BTC.PLN = false;
  * Market watcher
  */
 // Market watcher support (true - enabled, false - disabled)
-config.marketWatcher.enabled = false;
+config.marketWatcher.enabled = true;
 // Poloniex exchange support (true - enabled, false - disabled)
 // config.marketWatcher.exchanges.poloniex = false;
 // Bittrex exchange support (true - enabled, false - disabled);
-config.marketWatcher.exchanges.bittrex = true;
+config.marketWatcher.exchanges.bittrex = false;
 // Interval in ms for updating candlestick data (default: 30 seconds)
 config.marketWatcher.candles.updateInterval = 30000;
 // Build candles based on trades form last 30 days

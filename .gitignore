@@ -1,8 +1,9 @@
 node_modules
 public
-logs
 npm-debug.log
 .DS_Store
 dump.rdb
 sftp-config.json
 blockchain_explorer.db.gz
+**/*.log
+.secrets

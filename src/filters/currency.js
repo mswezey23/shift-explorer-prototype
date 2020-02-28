@@ -8,6 +8,8 @@ AppFilters.filter('currency', (numberFilter, shiftFilter) => (amount, currency, 
     factor = currency.tickers.SHIFT[currency.symbol];
   } else if (currency.symbol !== 'SHIFT') {
     // Exchange rate not available for current symbol
+    // eslint-disable-next-line no-console
+    // console.log(`Currency Symbol: ${currency.symbol}`);
     return 'N/A';
   }
 

@@ -159,9 +159,13 @@ module.exports = function (config) {
         currency[key1] = {};
         async.forEachOf(exchange, (exchange2, key2, seriesCb2) => {
           requestTicker(exchange2, (err, result) => {
-            if (result && isNumeric(result)) {
+            // if (result && isNumeric(result)) { TODO: fix this check
+            if (result) {
+              logger.info(isNumeric(result));
+              logger.info(`${key1} ${key2}`);
               currency[key1][key2] = result;
             } else {
+              logger.error(isNumeric(result));
               logger.error(util.format('Cannot receive exchange rates for %s/%s pair from [%s], ignored', key1, key2, exchange2[0]));
             }
             seriesCb2(null, currency);
@@ -172,7 +176,7 @@ module.exports = function (config) {
         });
       },
       () => {
-        logger.error('Exchange rates:', currency);
+        logger.info('Exchange rates:', currency);
         cb(null, currency);
       });
     },
