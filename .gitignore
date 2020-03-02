@@ -5,5 +5,4 @@ npm-debug.log
 dump.rdb
 sftp-config.json
 blockchain_explorer.db.gz
-**/*.log
 .secrets
