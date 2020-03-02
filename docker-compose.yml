@@ -1,0 +1,33 @@
+# Shift Explorer & Redis & FreeGeo IP
+version: '3.1'
+
+services:
+    redis:
+        image: redis:alpine
+        container_name: cache
+        restart: always
+        expose:
+          - 6379
+        
+    shift-explorer:
+        build: .
+        container_name: shift-explorer
+        restart: always
+        environment:
+            NODE_ENV: production
+            REDIS_HOST: redis
+            FREEGEOIP_HOST: freegeoip
+        ports:
+          - 6040:6040
+        depends_on: 
+          - redis
+          - freegeoip
+        volumes:
+          - .:/home/shift
+          - /home/shift/node_modules
+    
+    freegeoip:
+        image: mswezey/freegeoip:latest
+        # build: ./freegeoip/
+        container_name: freegeoip
+        restart: always

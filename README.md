@@ -5,6 +5,12 @@ Shift Explorer version 1.5.0 works in conjunction with the Shift Core API. It us
 [![Build Status](https://travis-ci.org/mswezey23/shift-explorer-prototype.svg?branch=development)](https://travis-ci.org/mswezey23/shift-explorer-prototype)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
+## WIP - Docker Compose
+
+Quickstart - `docker-compose up -d`
+
+Hit localhost:6040 in your favorite browser
+
 ## Prerequisites
 
 These programs and resources are required to install and run Shift Explorer

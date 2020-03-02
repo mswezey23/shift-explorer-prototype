@@ -1,32 +1,41 @@
-FROM node:6 AS builder
+FROM node:10 AS builder
+LABEL description="Shift Explorer Docker Image" version="1.5.0"
 
-RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install --no-install-recommends \
-        build-essential \
-        jq \
-	redis-server && \
-    npm install -g grunt && \
-    npm install -g bower
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TOP=true
+ENV TERM=xterm
+ENV NPM_CONFIG_PREFIX=/home/shift/.npm-global
+ENV PATH=$PATH:/home/shift/.npm-global/bin 
+# optionally if you want to run npm global bin without specifying path
 
-COPY . /home/shift/shift-explorer/
-RUN useradd shift && \
-    chown shift:shift -R /home/shift
+# Install Dependencies
+WORKDIR /~
+RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential jq redis-server
+
+FROM builder AS shiftuser
+# Create shift user & group
+RUN useradd -ms /bin/bash shift
+
+# Configure Global NPM Folder
 USER shift
-RUN cd /home/shift/shift-explorer && \
-    npm install
-RUN cd /home/shift/shift-explorer && \
-    npm run build && \
-    redis-server --daemonize yes && \
-    grunt candles:build && \
-    grunt candles:update
+WORKDIR /home/shift
+RUN mkdir .npm-global && npm config set prefix "~/.npm-global" &&\ 
+    export PATH=~/.npm-global/bin:$PATH && /bin/bash -c "source ~/.profile" &&\
+    npm install -g pm2 grunt-cli
 
+# Install Shift Explorer
+FROM shiftuser as shiftexplorer
+USER shift
+WORKDIR /home/shift
+# Copy Assets
+COPY ./package.json .
+# COPY ./package-lock.json .
+RUN yarn
+COPY --chown=shift:shift . .
 
-FROM node:6-alpine
-
-RUN adduser -D shift 
-COPY --chown=shift:shift --from=builder /home/shift /home/shift
-COPY --chown=shift:shift config.docker.js /home/shift/shift-explorer/config.js
+# Run webpack build
+RUN cd /home/shift && yarn build:prd
 
 USER shift
-WORKDIR /home/shift/shift-explorer
+WORKDIR /home/shift
 CMD ["node", "app.js"]

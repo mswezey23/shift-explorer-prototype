@@ -16,13 +16,13 @@ config.shift.port = 80;
 /**
  * FreeGeoIP server
  */
-config.freegeoip.host = '127.0.0.1';
+config.freegeoip.host = process.env.FREEGEOIP_HOST || '127.0.0.1';
 config.freegeoip.port = 8080;
 
 /**
  * Redis server
  */
-config.redis.host = '0.0.0.0';
+config.redis.host = process.env.REDIS_HOST || '0.0.0.0';
 config.redis.port = 6379;
 config.redis.db = 0;
 config.redis.password = '';
@@ -63,7 +63,7 @@ config.exchangeRates.exchanges.BTC.PLN = false;
  * Market watcher
  */
 // Market watcher support (true - enabled, false - disabled)
-config.marketWatcher.enabled = true;
+config.marketWatcher.enabled = false;
 // Poloniex exchange support (true - enabled, false - disabled)
 // config.marketWatcher.exchanges.poloniex = false;
 // Bittrex exchange support (true - enabled, false - disabled);

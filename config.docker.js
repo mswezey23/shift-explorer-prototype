@@ -8,21 +8,21 @@ config.host = '0.0.0.0'; // Interface to listen on, 0.0.0.0 to listen on all ava
 config.port = 6040; // Port to listen on
 
 /**
- * shift node
+ * SHIFT node
  */
-config.shift.host = process.env.SHIFT_HOST;
-config.shift.port = 4000;
+config.shift.host = 'corenodes.shiftnrg.io';
+config.shift.port = 80;
 
 /**
  * FreeGeoIP server
  */
-config.freegeoip.host = process.env.FREEGEOIP_HOST;
+config.freegeoip.host = '127.0.0.1';
 config.freegeoip.port = 8080;
 
 /**
  * Redis server
  */
-config.redis.host = process.env.REDIS_HOST;
+config.redis.host = '0.0.0.0';
 config.redis.port = 6379;
 config.redis.db = 0;
 config.redis.password = '';
@@ -46,16 +46,16 @@ config.exchangeRates.enabled = true;
 config.exchangeRates.updateInterval = 30000;
 
 // Configuration for different currency pairs, set false to disable pair
-// LSK/BTC pair, supported: poloniex
-config.exchangeRates.exchanges.LSK.BTC = 'poloniex';
+// LSK/BTC pair, supported: poloniex, bittrex
+config.exchangeRates.exchanges.SHIFT.BTC = 'livecoin';
 // LSK/CNY pair, supported: jubi, bitbays
-config.exchangeRates.exchanges.LSK.CNY = 'jubi';
+// config.exchangeRates.exchanges.LSK.CNY = 'jubi';
 // BTC/USD pair, supported: bitfinex, bitstamp, btce
 config.exchangeRates.exchanges.BTC.USD = 'bitfinex';
 // BTC/EUR pair, supported: bitstamp, bitmarket
 config.exchangeRates.exchanges.BTC.EUR = 'bitstamp';
 // BTC/RUB pair, supported: btce, exmo
-config.exchangeRates.exchanges.BTC.RUB = 'btce';
+config.exchangeRates.exchanges.BTC.RUB = false; // 'exmo'
 // BTC/PLN pair, supported: bitmarket
 config.exchangeRates.exchanges.BTC.PLN = false;
 
@@ -65,13 +65,13 @@ config.exchangeRates.exchanges.BTC.PLN = false;
 // Market watcher support (true - enabled, false - disabled)
 config.marketWatcher.enabled = true;
 // Poloniex exchange support (true - enabled, false - disabled)
-config.marketWatcher.exchanges.poloniex = true;
+// config.marketWatcher.exchanges.poloniex = false;
 // Bittrex exchange support (true - enabled, false - disabled);
-config.marketWatcher.exchanges.bittrex = true;
+config.marketWatcher.exchanges.bittrex = false;
 // Interval in ms for updating candlestick data (default: 30 seconds)
 config.marketWatcher.candles.updateInterval = 30000;
 // Build candles based on trades form last 30 days
-config.marketWatcher.candles.poloniex.buildTimeframe = 60 * 60 * 24 * 30;
+// config.marketWatcher.candles.poloniex.buildTimeframe = 60 * 60 * 24 * 30;
 // Interval in ms for updating order book data (default: 15 seconds)
 config.marketWatcher.orders.updateInterval = 15000;
 
