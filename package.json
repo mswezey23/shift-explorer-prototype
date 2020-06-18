@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "amstock3": "^3.21.15",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-advanced-searchbox": "^3.0.1",
     "angular-animate": "^1.7.9",
     "angular-gettext": "^2.4.1",
